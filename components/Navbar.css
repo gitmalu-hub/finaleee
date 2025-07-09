@@ -1,0 +1,80 @@
+.appbar {
+    position: fixed;       /* Fix navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;          /* Full viewport width */
+    background-color: #333333 !important;
+    color: white;
+    height: 80px;          /* Adjust height as you want */
+    box-shadow: none;
+    display: flex;
+    justify-content: center;  /* Center inner content */
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1300;
+  }
+  
+  .toolbar {
+    width: 100%;
+    max-width: 1200px;     /* Max width to constrain content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;        /* Center toolbar inside appbar */
+    padding: 0;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .nav-button {
+    background-color: white !important;
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    text-transform: none !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #ff5722 !important;
+    color: white !important;
+  }
+  
+  .nav-button .MuiButton-startIcon {
+    font-size: 26px;
+    color: #ff5722;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-button:hover .MuiButton-startIcon {
+    color: white;
+  }
+  
+  /* Important: Add some top padding to your main content so it’s not hidden behind navbar */
+  body, #root, .app-content {
+    padding-top: 80px;  /* same height as navbar */
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
